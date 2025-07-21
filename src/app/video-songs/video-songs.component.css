@@ -1,0 +1,214 @@
+
+.btn-group {
+  display: flex;
+   gap: 2px;
+}
+
+.btn-group button {
+  background-color: rgb(93, 22, 169);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19);
+  color: white;
+  padding: 10px 24px;
+  cursor: pointer;
+  font-size: medium;
+  border: none;
+}
+
+.btn-group button:hover {
+  background-color: #ffffff;
+  color: black;
+}
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: #ffffff;
+    color: black;
+  }
+
+.card-container {
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
+}
+
+.mat-typography {
+    background-color: #000000;
+}
+
+.mat-toolbar {
+    background-color: #000000de;
+    
+}
+.mat-toolbar span {
+    color: #ffffff;
+}
+.noteCard{
+    width:20vw;
+    margin:20px;
+    border:2px solid rgb(207, 143, 233);
+    display: flex;
+    flex-direction: column;
+}
+.card-container{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+mat-card{
+    margin: 40px;
+    padding:20px;
+    position: relative;
+    border-radius: 11px;
+    width: 700px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+}
+mat-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.icon-actions{
+    position: relative;
+    cursor: pointer;
+}
+.icon-edit{
+    position: absolute;
+    bottom: 35px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+.form-control{
+    color: cornsilk;
+    padding: 10px;
+    margin: 10px;
+    width:25vw;
+    color:black;
+    float: right;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+    border-radius: 11px;
+}
+
+.material-icons{
+    color: rgb(92, 85, 99); 
+  }
+
+  /* mat-card{
+      background-image: url("https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583246/AAA/2.jpg");
+      
+   filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  height: 100%; 
+  } */
+
+  .song-delete{
+    text-align: justify;  /* For Edge */
+    text-align-last: right;
+    cursor: pointer;
+    padding: 5px;
+    
+  }
+  mat-accordion{
+      margin: 10px;
+  }
+  .song-center{
+    text-align: justify;  /* For Edge */
+    text-align: center;
+    padding: 5px;
+  }
+  h1{
+      text-align: center;
+  }
+
+  @media screen and (max-width: 600px) {
+  .btn-group button {
+    width: 100%;
+    float: none;
+    margin-bottom: 10px;
+  }
+
+  .noteCard {
+    width: 80vw;
+  }
+
+  .form-control {
+    width: 80vw;
+    float: none;
+  }
+
+  mat-card {
+    width: 80vw;
+    margin: 20px auto;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .mat-form-field {
+    width: 90%;
+  }
+}
+
+/* 📱📲 Tablets (min-width: 601px) and (max-width: 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .noteCard {
+    width: 45vw;
+  }
+
+  .form-control {
+    width: 80vw;
+    float: none;
+  }
+
+  mat-card {
+    width: 80vw;
+    margin: 30px auto;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .mat-form-field {
+    width: 80%;
+  }
+}
+
+/* 🖥️ Large screens (desktops & bigger) */
+@media screen and (min-width: 1025px) {
+  .noteCard {
+    width: 20vw;
+  }
+
+  .form-control {
+    width: 25vw;
+  }
+
+  mat-card {
+    width: 700px;
+  }
+
+  .mat-form-field {
+    width: 380px;
+  }
+}
